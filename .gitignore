@@ -1,0 +1,7 @@
+videos/
+images/
+build/
+node_modules/
+.idea/
+.tmp/
+unit-tests/

@@ -1,0 +1,59 @@
+body{
+  font-family:arial;
+  background-color: $bodyBgColor;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  @include smallBreakPoint{
+    border: 0;
+    background-color: $sectionContainerBgColor;
+  }
+}
+ul{
+  padding:0;
+  li{
+    list-style-type:none;
+    margin-bottom:$margin-standard;
+    font-size:$text-regular;
+  }
+  li a{
+    color:$main-text;
+    &:hover{
+      color:$main-text-hover;
+    }
+  }
+}
+h2{
+  margin-top:$margin-standard;
+  color:$main-text;
+  text-transform: capitalize;
+}
+h3{
+  margin-top:0;
+  margin-bottom:$margin-standard;
+  font-size:$text-regular;
+  font-weight: bold;
+  color:$main-text;
+  text-transform: uppercase;
+}
+.section-container{
+  border: 1px solid $border-color;
+  border-top:0;
+  border-radius: $border-radius;
+  border-top-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  padding: $padding-medium;
+  padding-left: $padding-large;
+  padding-top:$padding-large;
+  background-color: $sectionContainerBgColor;
+  color:$main-text;
+  margin-bottom: $bodyPaddingTopAndBottom;
+  @include smallBreakPoint{
+    border: 0;
+    background-color: $sectionContainerBgColor;
+  }
+}
+
+

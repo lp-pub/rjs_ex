@@ -1,0 +1,41 @@
+#topNav{
+  width:100%;
+  margin-bottom: 0;
+  height: 30px;
+  z-index:8;
+  position: absolute;
+  @include smallBreakPoint{
+    border: 0;
+  }
+  .navContainer{
+    border: 1px solid $border-color;
+    border-bottom:0;
+    border-radius: $border-radius;
+    border-bottom-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    background-color:$sectionContainerBgColor;
+    margin-top:$bodyPaddingTopAndBottom;
+    @include smallBreakPoint{
+      border: 0;
+    }
+  }
+  ul{
+    float:right;
+  }
+  li{
+    float: left;
+    padding: $padding-standard;
+    margin-left: $margin-medium;
+    font-size: $text-menu-top;
+
+    a{
+      color:$unselected;
+      cursor:pointer;
+    }
+    &.selected a{
+      color:$selected;
+    }
+  }
+}

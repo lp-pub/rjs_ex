@@ -1,0 +1,83 @@
+//colors
+$main-text: #d3d3d3;
+$main-text-hover: #f1f1f1;
+$textShadowColor: black;
+$video-watched: #b5b5b5;
+$bodyBgColor: #282828;
+$linkTextBg: rgba(0, 0, 0, 0.23);
+
+$selected: #85b779;
+$unselected: #b7b7b7;
+$heartSelected: red;
+
+$sectionContainerBgColor: #1b1b1b;
+
+//borders
+$border-color: #828282;
+$border-radius: 20px;
+
+//fonts
+$text-regular: 12px;
+$text-small: 9px;
+$text-menu-top: 20px;
+
+//margins
+$margin-standard: 10px;
+$margin-medium: 20px;
+$margin-large: 50px;
+
+//padding
+$padding-standard: 10px;
+$padding-medium: 20px;
+$padding-large: 50px;
+$bodyPaddingTopAndBottom: 15px;
+
+//video settings
+$video-max-width: 960px;//set to video's original horizontal width
+//image settings
+$image-max-width: 960px;//set to image's original horizontal width
+
+//breakpoints
+$BP-medium: 990px;
+$BP-medium-mid: 878px;
+$BP-small: 765px;
+$BP-small-mid: 658px;
+$BP-extraSmall: 550px;
+$BP-extraSmall-Mid: 400px;
+
+/* todo refactor */
+@mixin extraSmallBreakPointMid {
+  @media (max-width: $BP-extraSmall-Mid) {
+    @content;
+  }
+}
+@mixin extraSmallBreakPoint {
+  @media (max-width: $BP-extraSmall) {
+    @content;
+  }
+}
+@mixin smallBreakPointMid {
+  @media (max-width: $BP-small-mid) {
+    @content;
+  }
+}
+@mixin smallBreakPoint {
+  @media (max-width: $BP-small) {
+    @content;
+  }
+}
+@mixin mediumBreakPointMid {
+  @media (max-width: $BP-medium-mid) {
+    @content;
+  }
+}
+@mixin mediumBreakPoint {
+  @media (max-width: $BP-medium) {
+    @content;
+  }
+}
+@mixin largeBreakPoint {
+  @media (min-width: $BP-medium) {
+    @content;
+  }
+}
